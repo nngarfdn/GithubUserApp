@@ -14,7 +14,7 @@ import rx.schedulers.Schedulers
 
 class FollowersViewModel : ViewModel() {
 
-    private var searchData: MutableLiveData<List<ItemsGithubSearch>> = MutableLiveData()
+    private val searchData: MutableLiveData<List<ItemsGithubSearch>> = MutableLiveData()
     fun setFollowers(username: String) {
         val service = GithubClient.initRetrofit()
 

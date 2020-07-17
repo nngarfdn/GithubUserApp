@@ -12,7 +12,7 @@ import rx.schedulers.Schedulers
 
 class ProfileViewModel : ViewModel() {
 
-    private var searchData: MutableLiveData<GithubProfile> = MutableLiveData()
+    private val searchData: MutableLiveData<GithubProfile> = MutableLiveData()
 
     fun setProfile(username: String) {
         val service = GithubClient.initRetrofit()

@@ -12,7 +12,7 @@ import rx.schedulers.Schedulers
 
 class SearchViewModel : ViewModel() {
 
-    private var searchData: MutableLiveData<GithubSearch> = MutableLiveData()
+    private val searchData: MutableLiveData<GithubSearch> = MutableLiveData()
 
     fun setSearch(username: String) {
         val service = GithubClient.initRetrofit()

@@ -12,7 +12,7 @@ import rx.schedulers.Schedulers
 
 class FollowwingViewModel : ViewModel() {
 
-    private var searchData: MutableLiveData<List<ItemsGithubSearch>> = MutableLiveData()
+    private val searchData: MutableLiveData<List<ItemsGithubSearch>> = MutableLiveData()
 
     fun setFollowing(username: String) {
         val service = GithubClient.initRetrofit()

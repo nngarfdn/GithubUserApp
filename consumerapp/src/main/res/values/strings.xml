@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Consummer App</string>
+    <string name="name">nama</string>
+    <string name="company">perusahaan</string>
+    <string name="username">username</string>
+    <string name="location">lokasi</string>
+    <string name="desc">description</string>
+    <string name="_6523">6523</string>
+    <string name="repo">Repo</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="search">Cari</string>
+    <string name="input_username">Masukan Username</string>
+    <string name="no_data_found">Data tidak ada</string>
+    <string name="change_language">Ganti bahasa</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="favorite">Favorite</string>
+    <string name="reminder">Reminder</string>
+    <string name="setting">Pengaturan</string>
+    <string name="content_text">Ayo buka aplikasi</string>
+</resources>
