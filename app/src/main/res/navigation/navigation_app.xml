@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_followers">
+
+    <fragment
+        android:id="@+id/navigation_followers"
+        android:name="com.iniudin.githubuserapp.ui.fragment.FollowersFragment"
+        android:label="@string/followers"
+        tools:layout="@layout/fragment_followers" >
+        <action
+            android:id="@+id/action_navigation_followers_to_navigation_following"
+            app:destination="@id/navigation_following" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_following"
+        android:name="com.iniudin.githubuserapp.ui.fragment.FollowingFragment"
+        android:label="@string/following"
+        tools:layout="@layout/fragment_following" >
+        <action
+            android:id="@+id/action_navigation_following_to_navigation_followers"
+            app:destination="@id/navigation_followers" />
+    </fragment>
+
+
+</navigation>

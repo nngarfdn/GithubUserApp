@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showList() {
-        val adapter = UserAdapter(daftarUser, this)
+        val adapter = UserAdapter( this)
         val rvUser = rvUser
         rvUser.adapter = adapter
         rvUser.layoutManager = LinearLayoutManager(this)
